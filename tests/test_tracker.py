@@ -7,3 +7,6 @@ from expense_tracker.tracker import list_expenses
 
 def test_list_returns_list():
     assert isinstance(list_expenses(), list)
+# Stores expense records
+# Adds new expense
+# Returns total amount
