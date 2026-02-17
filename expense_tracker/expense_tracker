@@ -11,3 +11,6 @@ if __name__ == "__main__":
     add_expense("Book", 20)
     print("Expenses:", list_expenses())
     print("Total:", total_expenses())
+def save_to_file(filename="expenses.json"):
+    with open(filename, "w") as f:
+        json.dump(expenses, f)
