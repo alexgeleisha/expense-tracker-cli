@@ -3,3 +3,5 @@ def add_expense(name, amount):
     expenses.append({"name": name, "amount": amount})
 def list_expenses():
     return expenses
+def total_expenses():
+    return sum(item["amount"] for item in expenses)
