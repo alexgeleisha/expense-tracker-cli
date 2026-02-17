@@ -1,1 +1,3 @@
 expenses = []
+def add_expense(name, amount):
+    expenses.append({"name": name, "amount": amount})
