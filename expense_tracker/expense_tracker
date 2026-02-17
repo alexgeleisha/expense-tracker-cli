@@ -14,3 +14,10 @@ if __name__ == "__main__":
 def save_to_file(filename="expenses.json"):
     with open(filename, "w") as f:
         json.dump(expenses, f)
+def load_from_file(filename="expenses.json"):
+    global expenses
+    try:
+        with open(filename, "r") as f:
+            expenses = json.load(f)
+    except FileNotFoundError:
+        expenses = []
