@@ -5,3 +5,8 @@ def list_expenses():
     return expenses
 def total_expenses():
     return sum(item["amount"] for item in expenses)
+if __name__ == "__main__":
+    add_expense("Coffee", 5)
+    add_expense("Book", 20)
+    print("Expenses:", list_expenses())
+    print("Total:", total_expenses())
