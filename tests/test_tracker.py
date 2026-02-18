@@ -10,3 +10,8 @@ def test_list_returns_list():
 # Stores expense records
 # Adds new expense
 # Returns total amount
+from expense_tracker.tracker import clear_expenses
+
+def test_clear():
+    clear_expenses()
+    assert len(list_expenses()) == 0
