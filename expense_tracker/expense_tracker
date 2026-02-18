@@ -25,3 +25,6 @@ def load_from_file(filename="expenses.json"):
         expenses = []
 
 save_to_file()
+def clear_expenses():
+    global expenses
+    expenses = []
