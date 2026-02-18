@@ -12,3 +12,5 @@ python expense_tracker/tracker.py
 
 ## Tests
 pytest
+## Data Persistence
+Expenses are saved to a JSON file automatically.
