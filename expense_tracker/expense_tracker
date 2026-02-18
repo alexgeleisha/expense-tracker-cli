@@ -1,3 +1,5 @@
+load_from_file()
+
 import json
 expenses = []
 def add_expense(name, amount):
@@ -21,3 +23,5 @@ def load_from_file(filename="expenses.json"):
             expenses = json.load(f)
     except FileNotFoundError:
         expenses = []
+
+save_to_file()
