@@ -15,3 +15,10 @@ from expense_tracker.tracker import clear_expenses
 def test_clear():
     clear_expenses()
     assert len(list_expenses()) == 0
+from expense_tracker.tracker import save_to_file, load_from_file
+
+def test_save_and_load():
+    add_expense("TestSave", 15)
+    save_to_file("test_expenses.json")
+    load_from_file("test_expenses.json")
+    assert total_expenses() >= 15
